@@ -1,3 +1,21 @@
+"""
+data_transformation.py
+----------------------
+This file prepares raw data into a clean, model-ready format.
+
+What it does:
+- Handles missing values
+- Encodes categorical features using OneHotEncoder
+- Scales numerical features
+- Combines all transformations using pipelines
+- Saves the preprocessing logic as preprocessor.pkl
+
+Why it is needed:
+- ML models cannot work with raw or textual data
+- Ensures the same data preparation is applied during training and prediction
+- Prevents data leakage and inconsistency
+"""
+
 import sys
 import os
 from dataclasses import dataclass
